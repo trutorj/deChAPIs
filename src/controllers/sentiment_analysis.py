@@ -6,6 +6,7 @@ from bson.json_util import dumps
 from flask import request
 from src.helpers.errorHandler import errorHandler, Error404, APIError
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
+nltk.download('vader_lexicon')
 
 client = pymongo.MongoClient(DBURL)
 print(f"Connected to {DBURL}")
