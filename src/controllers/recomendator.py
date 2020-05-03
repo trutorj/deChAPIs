@@ -1,4 +1,5 @@
 from src.app import app
+import pymongo
 from pymongo import MongoClient
 from src.config import DBURL
 from bson.json_util import dumps
@@ -7,11 +8,10 @@ import pandas as pd
 import nltk
 from nltk.corpus import stopwords 
 from nltk.tokenize import word_tokenize 
-import sklearn
 from sklearn.feature_extraction.text import CountVectorizer
 from scipy.spatial.distance import pdist, squareform
 
-client = MongoClient(DBURL)
+client = pymongo.MongoClient(DBURL)
 print(f"Connected to {DBURL}")
 # Select the collection
 db = client.get_default_database()["comments"]
@@ -43,8 +43,8 @@ cleaned = [textCleaner(e) for e in textos ]
 
 # Vectorize the words
 count_vectorizer = CountVectorizer()
-sparse_matrix = count_vectorizer.fit_transform(cleaned)
-#print(list(count_vectorizer.vocabulary_.keys()))
+sparse_matrix = count_vectorizer.fit_transform(cleaned) 
+print(list(count_vectorizer.vocabulary_.keys()))
 m = sparse_matrix.todense()
 #print(m.shape)
 

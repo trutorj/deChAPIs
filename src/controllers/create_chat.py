@@ -1,4 +1,5 @@
 from src.app import app
+import pymongo
 from pymongo import MongoClient
 from src.config import DBURL
 from bson.json_util import dumps
