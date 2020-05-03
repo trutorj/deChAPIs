@@ -72,11 +72,15 @@ https://chapasso.herokuapp.com/chat/Mums_Occupy/list
 
 * Sacar los sentimientos de un chat:
 
-https://chapasso.herokuapp.com/chat/Mums_Occupy/sentiment
+https://chapasso.herokuapp.com/chat/drink_semen/sentiment
 
 * Encontrar el usuario más parecido al usuario "Yoda":
 
-https://chapasso.herokuapp.com/users/Yoda/recommend
+https://chapasso.herokuapp.com/user/GreenElephant/recommend
 
 
+#### Bonus. Enlace a las noticias
 
+* https://metro.co.uk/2020/05/01/mum-drinks-sperm-smoothies-fight-off-coronavirus-12639469/
+
+* https://metro.co.uk/2020/05/02/mums-occupy-childrens-playground-protest-lockdown-12643715/
