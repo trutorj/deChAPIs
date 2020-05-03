@@ -24,18 +24,36 @@ def extracSentiments(chat_name):
     #print(messages)
     lista_msg = [e["text"] for e in messages]
 
-    # Analize each message and store its score in a dictionary. Append them in a list
+    # Analize the message and store in a list
+    sentiment_list = [SentimentIntensityAnalyzer().polarity_scores(e) for e in lista_msg]
+
+    # Calculate the mean compound of the whole chat
+    # Extract the compound component
+    compound_list = []
+    for e in sentiment_list:
+        for k,v in e.items():
+            if k == "compound":
+                compound_list.append(v)
+    # Calculate the mean
+    compound_mean = sum(compound_list) / len(compound_list)
+    # Classify the value of compound metric 
+    sentiment_chat = ""
+    if compound_mean >= 0.05:
+        sentiment_chat = "Positive"
+    elif compound_mean > -0.05 and compound_mean <0.05:
+        sentiment_chat = "Neutral"
+    else:
+        sentiment_chat = "Negative"
+
+    # Create a dictionary to serve each message and its valoration
     results = []
     for i in range(len(lista_msg)):
         results.append({
             "message": lista_msg[i],
-            "polarity": SentimentIntensityAnalyzer().polarity_scores(lista_msg[i])
+            "polarity": sentiment_list[i]
         })
-
-
-     
+    
     return {
+        "Chat overall sentiment": f"The overall sentiment of the chat is {sentiment_chat} with a mean compound of {compound_mean}",
         "Sentiment Analysis Results":results
         }
-
-    
