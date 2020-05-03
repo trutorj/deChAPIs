@@ -22,4 +22,7 @@ def insertUsername(username):
     else:
         myuser = {"username": f"{username}"}
         x = db.insert_one(myuser)    
-        return dumps(x.inserted_id)
+        return {
+            "status": "New user created",
+            "dbresponse":dumps(x.inserted_id)}
+    

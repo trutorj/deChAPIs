@@ -32,6 +32,7 @@ def createMessage(chat_name):
 
     # Insert the document in the database
     x = db.insert_one(mymessage)    
-    return dumps(x.inserted_id)
-
+    return {
+            "status": "New message created",
+            "dbresponse":dumps(x.inserted_id)}
     
