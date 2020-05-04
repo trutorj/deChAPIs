@@ -1,4 +1,4 @@
-# deChAPIs
+# chAPasso
 #### *API para la gestión y análisis de los comentarios de noticias*
 
 ## Introducción
