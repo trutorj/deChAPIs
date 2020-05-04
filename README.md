@@ -1,4 +1,4 @@
-# deChAPIs
+# chAPAsso
 #### *API para la gestión y análisis de los comentarios de noticias*
 
 ## Introducción
@@ -72,11 +72,11 @@ https://chapasso.herokuapp.com/chat/Mums_Occupy/list
 
 * Sacar los sentimientos de un chat:
 
-https://chapasso.herokuapp.com/chat/drink_semen/sentiment
+https://chapasso.herokuapp.com/chat/semen_drink/sentiment
 
 * Encontrar el usuario más parecido al usuario "Yoda":
 
-https://chapasso.herokuapp.com/user/GreenElephant/recommend
+https://chapasso.herokuapp.com/user/Yoda/recommend
 
 
 #### Bonus. Enlace a las noticias
