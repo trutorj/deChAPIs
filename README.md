@@ -84,3 +84,5 @@ https://chapasso.herokuapp.com/user/Yoda/recommend
 * https://metro.co.uk/2020/05/01/mum-drinks-sperm-smoothies-fight-off-coronavirus-12639469/
 
 * https://metro.co.uk/2020/05/02/mums-occupy-childrens-playground-protest-lockdown-12643715/
+
+* https://metro.co.uk/2020/05/03/boris-johnson-set-plan-leaving-lockdown-next-week-12648962/
