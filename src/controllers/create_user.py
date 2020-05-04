@@ -21,7 +21,7 @@ def insertUsername(username):
         print("Error")
         raise APIError("Username exists in the dabatabase. Choose another one")   
     else:
-        myuser = {"username": f"{username}"}
+        myuser = {"type": "user", "username": f"{username}"}
         x = db.insert_one(myuser)    
         return {
             "status": "New user created",
