@@ -3,7 +3,7 @@
 
 ## Introducción
 
-Este proyecto tiene como dos objetivos, por un lado, la creación de una API que permita la gestión de los mensajes que los lectores dejan en los comentarios de las noticias en un periódicos online. Por otro lado, la API permite el análisis de los sentimientos de las conversaciones generadas, así como busca el usuari@ más similar basándose en los comentarios mediante un sistema de recomendación.
+Este proyecto tiene como objetivos, por un lado, la creación de una API que permita la gestión de los mensajes que los lectores dejan en los comentarios de las noticias en un periódicos online. Por otro lado, la API permite el análisis de los sentimientos de las conversaciones generadas, así como busca el usuari@ más similar basándose en los comentarios mediante un sistema de recomendación.
 La base de datos generada se aloja en un cluster de Mongo Atlas y la API se sirve en la nube mediante Heroku. En
 
 ## Materiales y métodos
